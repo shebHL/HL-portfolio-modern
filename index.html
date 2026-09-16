@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrietta — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="#" class="logo">HL</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="sub-badge">Available for thoughtful collaborations</span>
+        <h1 class="hero-title">Your Name</h1>
+        <p class="hero-subtitle">Full Stack Developer</p>
+        <p class="hero-description">
+          I design and build considered digital experiences that make complex things feel simple.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="Henrietta Lisk.jpg" alt="Portrait image of Henrietta Lisk" class="hero-image">
+        <span class="image-caption">Building for the web</span>
+      </div>
+    </section>
+
+    <!-- 01 — About Section -->
+     <!-- <div class="about-section-wrapper"> -->
+    <section id="about" class="about-section">
+        
+        <div>
+            <div class="section-label">01 — ABOUT</div>
+            <h2 class="section-heading">A developer who cares about the details.</h2>
+        </div>
+        <div>
+            <p class="about-intro">
+                I'm a Full Stack Developer passionate about creating seamless web applications that combine beautiful interfaces with reliable backend architecture. I enjoy solving problems, learning new technologies, and building software that makes a difference.
+            </p>
+
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                <h3 class="section-label">APPROACH</h3>
+                <p>Thoughtful, practical, and user-centred.</p>
+                </div>
+                <div class="pillar-card">
+                <h3 class="section-label">FOCUS</h3>
+                <p>Clear interfaces and reliable systems.</p>
+                </div>
+                <div class="pillar-card">
+                <h3 class="section-label">MINDSET</h3>
+                <p>Curious, collaborative, and always learning.</p>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+    <!-- </div> -->
+    <!-- 02 — Selected Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-label">02 — SELECTED PROJECTS</div>
+      <h2 class="section-heading">A few things I've made.</h2>
+      <p class="section-subtext">Replace these sample cards with work that best represents your practice.</p>
+
+      <div class="projects-list">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="rock-paper-scissors-img.png" alt="Rock, paper, and scissors hand gestures displayed together as a playful game choice illustration.">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">WEB APPLICATION</span>
+            <h3>Rock, Paper, Scissors</h3>
+            <p>A fun interactive game built with HTML, CSS, and JavaScript.</p>
+            <a target="_blank" href="https://rockpaperscissorgame122233446568.netlify.app/" class="link-action">Discuss this project &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="weather-checker-img.png" alt="a simple weather app interface showing current weather conditions and forecast for the week.">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">API APPLICATION</span>
+            <h3>Weather App</h3>
+            <p>A responsive weather dashboard that displays real-time conditions.</p>
+            <a target="_blank" href="https://weatherchecker123456789.netlify.app/" class="link-action">Discuss this project &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="project-3.jpg" alt="Modern computer screen displaying web design work">
+          </div>
+          <div class="project-info">
+            <span class="project-tag">DIGITAL PLATFORM</span>
+            <h3>Project Three</h3>
+            <p>A concise placeholder description of a product, site, or experiment you are proud to share.</p>
+            <a href="#contact" class="link-action">Discuss this project &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 03 — Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-label">03 — SKILLS</div>
+      <h2 class="section-heading">The tools behind the work.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>FRONTEND</h3>
+          <p>HTML · CSS · JavaScript · Responsive UI</p>
+        </div>
+        <div class="skill-group">
+          <h3>BACKEND</h3>
+          <p>APIs · Databases · Integrations · Architecture</p>
+        </div>
+        <div class="skill-group">
+          <h3>PRACTICE</h3>
+          <p>Accessibility · Performance · Collaboration · Delivery</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 — Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-label">04 — CONTACT</div>
+      <h2 class="section-heading">Let's make something useful.</h2>
+      <p>Have a project, role, or idea in mind? Send a message and I’ll get back to you.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required minlength="2">
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required minlength="10"></textarea>
+          <small class="error-message" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; Your Name — Portfolio</p>
+    <a href="#" class="back-to-top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
