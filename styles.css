@@ -4,6 +4,7 @@
 :root {
   --bg-color: #f2f1eb;            /* Main page light background */
   --bg-color-dark: #ECEAE3;       /* Darker background for sections */
+  --bg-color-alt: #202621;        /* Dark background for footer */
   --card-bg: #ffffff;             /* Project and pillar card background */
   
   --text-primary: #1f5244;        /* Main headings (h1, h2, h3) */
@@ -360,11 +361,42 @@ section {
 }
 
 /* Skills Section */
+
+.skills-section{
+  
+  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+  z-index: 1; /* Ensure content is above the pseudo-element background */
+  color:white;
+}
+.skills-section:before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    /* Stretch 100% full screen width */
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: var(--bg-color-alt);
+    z-index: -1;                /* Places background behind text and cards */
+
+}
+.skills-section .section-label,
+.skills-section .section-heading,
+.skills-section .skills-grid,
+.skills-section .skill-group p{
+  color: white;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+ 
 }
 
 .skill-group h3 {
