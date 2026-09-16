@@ -5,6 +5,7 @@
   --bg-color: #f2f1eb;            /* Main page light background */
   --bg-color-dark: #ECEAE3;       /* Darker background for sections */
   --bg-color-alt: #202621;        /* Dark background for footer */
+  --bg-color-alt-2:#DCE9E1;      /* Light background for skills section */
   --card-bg: #ffffff;             /* Project and pillar card background */
   
   --text-primary: #1f5244;        /* Main headings (h1, h2, h3) */
@@ -311,14 +312,14 @@ section {
 /* Projects Section */
 .projects-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3rem;
   margin-top: 3rem;
 }
 
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   background: var(--card-bg);
   padding: 1.5rem;
@@ -409,12 +410,23 @@ section {
 .skill-group p {
   color: var(--text-muted);
 }
+.border-t{
+    border-top: 1px solid white;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
 
 /* Contact & Footer */
-.contact-section {
+.contact-section-wrapper {
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
+}
+.contact-section {
+  background-color: var(--bg-color-alt-2);
+  border-radius: 25px;
+  padding: 3rem 2rem;
+  margin-top: 3rem; 
 }
 
 .contact-form {
@@ -431,6 +443,7 @@ section {
 .form-group label {
   font-weight: 600;
   color: var(--text-primary);
+  text-align: left;
 }
 
 .form-group input,
@@ -501,6 +514,7 @@ section {
   text-decoration: none;
 }
 
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .hero-section,
@@ -510,14 +524,9 @@ section {
   .about-section {
     grid-template-columns: 1fr;
   }
-  /* .about-section .cards-grid,
-.projects-section .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(494px, 1fr));
-  gap: 1.5rem;
-  width: 100%;
-}
-  .about-section{
-    width: 494px
-  } */
+  .projects-list {
+  
+    flex-direction: column;
+  }
+ 
 }
