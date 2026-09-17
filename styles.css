@@ -320,18 +320,26 @@ section {
 .project-card {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
   background: var(--card-bg);
-  padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   align-items: center;
-}
-
-.project-image img {
   width: 100%;
-  border-radius: 8px;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(31, 36, 48, 0.1);
+}
+.project-image img {
+
   display: block;
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin: 0;    
+  padding: 0; /* Removes any default padding */
+  border-radius: 12px 12px 0 0; /* Optional: adds rounded corners to the image */
+
 }
 
 .project-tag {
@@ -340,7 +348,9 @@ section {
   letter-spacing: 0.08em;
   color: var(--accent-color);
 }
-
+.project-info{
+  padding: 1.5rem;
+}
 .project-info h3 {
   font-size: 1.75rem;
   margin: 0.5rem 0 0.75rem;
